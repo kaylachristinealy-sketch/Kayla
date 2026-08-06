@@ -1,0 +1,9 @@
+<?php
+
+$reais = (float) readline("Digite o valor em Reais (R$): ");
+
+$cotacao = 5.20;
+
+$dolares = $reais / $cotacao;
+
+echo "Valor em dólares: US$ " . number_format($dolares, 2);
