@@ -1,0 +1,16 @@
+<?php
+
+$produto = readline("Digite o nome do produto: ");
+$preco = (float) readline("Digite o preço original: R$ ");
+$desconto = (float) readline("Digite a porcentagem de desconto: ");
+
+$valorDesconto = $preco * ($desconto / 100);
+$precoFinal = $preco - $valorDesconto;
+
+echo "\n===== RESUMO =====\n";
+echo "Produto: $produto\n";
+echo "Preço original: R$ " . number_format($preco, 2, ",", ".") . "\n";
+echo "Valor economizado: R$ " . number_format($valorDesconto, 2, ",", ".") . "\n";
+echo "Preço final: R$ " . number_format($precoFinal, 2, ",", ".") . "\n";
+
+?>
