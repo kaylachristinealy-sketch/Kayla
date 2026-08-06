@@ -1,0 +1,11 @@
+<?php
+
+$valor = readline("Digite um valor: ");
+
+echo "Valor digitado: $valor\n";
+echo "Tipo de dado: " . gettype($valor) . "\n";
+
+echo "Estrutura da variável:\n";
+var_dump($valor);
+
+?>
