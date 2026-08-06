@@ -1,0 +1,16 @@
+<?php
+
+$sa = readline("Digite o valor de Sa: ");
+$sb = readline("Digite o valor de Sb: ");
+
+echo "Valores originais:\n";
+echo "Sa = $sa\n";
+echo "Sb = $sb\n";
+
+$aux = $sa;
+$sa = $sb;
+$sb = $aux;
+
+echo "Após a troca:\n";
+echo "Sa = $sa\n";
+echo "Sb = $sb\n";
